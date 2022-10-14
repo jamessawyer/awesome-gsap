@@ -22,6 +22,10 @@ const sidebar_recipes = {
           link: '/recipes/basics',
         },
         {
+          text: 'Miscellaneous',
+          link: '/recipes/miscellaneous',
+        },
+        {
           text: 'Timelines',
           link: '/recipes/timelines',
         },
@@ -48,10 +52,6 @@ const sidebar_recipes = {
         {
           text: 'Other Plugins',
           link: '/recipes/other-plugins',
-        },
-        {
-          text: 'Miscellaneous',
-          link: '/recipes/miscellaneous',
         },
       ]
     }
