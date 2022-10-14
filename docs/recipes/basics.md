@@ -1,4 +1,7 @@
-最基本的用法：
+最基本的用法： `tween` 表示补间动画
+
+1️⃣ `gsap.to()`
+
 ```js
 // 'to' tween （根据配置动画到指定状态）
 gsap.to('.selector', { // selector 文本，数组，或对象
@@ -36,6 +39,26 @@ gsap.to('.selector', { // selector 文本，数组，或对象
 })
 ```
 
+2️⃣ `gsap.from()`:
+
+```js
+gsap.from('.selector', { fromVars })
+```
+
+3️⃣ `gsap.fromTo()`: 特殊性的属性（`duration` | `ease` 等）放到 `toVars` 中
+
+```js
+gsap.fromTo(
+  '.selector',
+  { fromVars },
+  { toVars }
+)
+```
+
+4️⃣ `gsap.set()`:
+```js
+gsap.set('.selector', { toVars })
+```
 
 
 2022年10月14日14:35:11
