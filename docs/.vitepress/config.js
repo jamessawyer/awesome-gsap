@@ -209,6 +209,7 @@ const sidebar_plugins = {
         { text: '.scrollor', link: '/plugins/scroll-trigger/properties/scrollor' },
         { text: '.start', link: '/plugins/scroll-trigger/properties/start' },
         { text: '.trigger', link: '/plugins/scroll-trigger/properties/trigger' },
+        { text: '.vars', link: '/plugins/scroll-trigger/properties/vars' },
       ]
     },
   ],
