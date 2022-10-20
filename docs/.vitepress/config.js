@@ -208,6 +208,7 @@ const sidebar_plugins = {
         { text: '.progress', link: '/plugins/scroll-trigger/properties/progress' },
         { text: '.scrollor', link: '/plugins/scroll-trigger/properties/scrollor' },
         { text: '.start', link: '/plugins/scroll-trigger/properties/start' },
+        { text: '.trigger', link: '/plugins/scroll-trigger/properties/trigger' },
       ]
     },
   ],
