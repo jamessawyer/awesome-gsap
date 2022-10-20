@@ -205,6 +205,7 @@ const sidebar_plugins = {
         { text: '.isActive', link: '/plugins/scroll-trigger/properties/isActive' },
         { text: 'ScrollTrigger.isTouch', link: '/plugins/scroll-trigger/properties/static-isTouch' },
         { text: '.pin', link: '/plugins/scroll-trigger/properties/pin' },
+        { text: '.progress', link: '/plugins/scroll-trigger/properties/progress' },
       ]
     },
   ],
