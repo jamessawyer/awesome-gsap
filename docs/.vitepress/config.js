@@ -212,6 +212,13 @@ const sidebar_plugins = {
         { text: '.vars', link: '/plugins/scroll-trigger/properties/vars' },
       ]
     },
+    {
+      text: '插件方法',
+      collapsible: true,
+      items: [
+        { text: 'ScrollTrigger.addEventListener', link: '/plugins/scroll-trigger/methods/static-addEventListener' },
+      ]
+    },
   ],
 }
 
