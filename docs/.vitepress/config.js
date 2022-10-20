@@ -201,7 +201,7 @@ const sidebar_plugins = {
       items: [
         { text: '.animation', link: '/plugins/scroll-trigger/properties/animation' },
         { text: '.direction', link: '/plugins/scroll-trigger/properties/direction' },
-        { text: '.end', link: '/book/patterns/module-system/module-system-in-js-and-node' },
+        { text: '.end', link: '/plugins/scroll-trigger/properties/end' },
       ]
     },
   ],
