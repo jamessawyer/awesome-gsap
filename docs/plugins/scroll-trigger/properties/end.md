@@ -13,7 +13,7 @@ title: end Property
 
 🌰
 
-假设 trigger 元素在viewport 100px下（out of view），ScrollTrigger的 [vars](https://greensock.com/docs/v3/Plugins/ScrollTrigger/vars) 定义为 `end: 'top bottom'`，则ScrollTrigger计算的 `end` 属性将是 `100`（即再滚动100px到达结束点）
+假设 trigger 元素在viewport 100px下（out of view），ScrollTrigger的 [vars](./vars) 定义为 `end: 'top bottom'`，则ScrollTrigger计算的 `end` 属性将是 `100`（即再滚动100px到达结束点）
 
 
 文档地址：

@@ -207,6 +207,7 @@ const sidebar_plugins = {
         { text: '.pin', link: '/plugins/scroll-trigger/properties/pin' },
         { text: '.progress', link: '/plugins/scroll-trigger/properties/progress' },
         { text: '.scrollor', link: '/plugins/scroll-trigger/properties/scrollor' },
+        { text: '.start', link: '/plugins/scroll-trigger/properties/start' },
       ]
     },
   ],
