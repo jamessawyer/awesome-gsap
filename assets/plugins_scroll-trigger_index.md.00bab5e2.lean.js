@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as r}from"./app.b32fbd73.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"plugins/scroll-trigger/index.md","lastUpdated":1665740477000}'),a={name:"plugins/scroll-trigger/index.md"};function s(n,o,c,i,d,p){return r(),t("div")}const m=e(a,[["render",s]]);export{_ as __pageData,m as default};
