@@ -203,6 +203,7 @@ const sidebar_plugins = {
         { text: '.direction', link: '/plugins/scroll-trigger/properties/direction' },
         { text: '.end', link: '/plugins/scroll-trigger/properties/end' },
         { text: '.isActive', link: '/plugins/scroll-trigger/properties/isActive' },
+        { text: 'ScrollTrigger.isTouch', link: '/plugins/scroll-trigger/properties/static-isTouch' },
       ]
     },
   ],
