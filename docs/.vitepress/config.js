@@ -199,8 +199,8 @@ const sidebar_plugins = {
       text: '插件属性',
       collapsible: true,
       items: [
-        { text: '.animation', link: '/book/patterns/module-system/index' },
-        { text: '.direction', link: '/book/patterns/module-system/the-need-for-modules' },
+        { text: '.animation', link: '/plugins/scroll-trigger/properties/animation' },
+        { text: '.direction', link: '/plugins/scroll-trigger/properties/direction' },
         { text: '.end', link: '/book/patterns/module-system/module-system-in-js-and-node' },
       ]
     },
