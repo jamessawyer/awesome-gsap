@@ -202,6 +202,7 @@ const sidebar_plugins = {
         { text: '.animation', link: '/plugins/scroll-trigger/properties/animation' },
         { text: '.direction', link: '/plugins/scroll-trigger/properties/direction' },
         { text: '.end', link: '/plugins/scroll-trigger/properties/end' },
+        { text: '.isActive', link: '/plugins/scroll-trigger/properties/isActive' },
       ]
     },
   ],
