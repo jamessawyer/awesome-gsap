@@ -114,7 +114,7 @@ tl.addLabel('start')
 
 ## 独立或自定义示例
 
-你不必将ScrollTriggers直接放在动画中（尽管这是最常见的一种做法😅）。使用回调最任何想做的事情：
+你不必将ScrollTriggers直接放在动画中（尽管这是最常见的一种做法😅）。使用回调做任何想做的事情：
 
 ```js
 ScrollTrigger.create({
