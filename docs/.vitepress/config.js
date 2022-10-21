@@ -6,6 +6,12 @@ const nav = [
       { text: 'ScrollTrigger', link: '../plugins/scroll-trigger/index' },
     ]
   },
+  {
+    text: '📒 Blogs',
+    items: [
+      { text: 'React❤️‍🔥GSAP', link: '../blogs/react/index' },
+    ]
+  },
 ]
 
 const sidebar_recipes = {
@@ -57,37 +63,26 @@ const sidebar_recipes = {
     }
   ],
 }
-// const sidebar_blog = {
-//   '/blog/': [
-//     {
-//       text: 'blog',
-//       items: [
-//         {
-//           text: '第一篇blog',
-//           link: '/blog/first',
-//         }
-//       ]
-//     },
-//     { 
-//       text: '🚀 好文翻译',
-//       collapsible: true,
-//       items: [
-//         {
-//           text: 'Path & URL的用法',
-//           link: '/blog/translate/file-system-paths'
-//         },
-//         {
-//           text: 'FS in Node',
-//           link: '/blog/translate/fs-in-node'
-//         },
-//         {
-//           text: 'Web Streams on Node',
-//           link: '/blog/translate/web-streams-on-node'
-//         },
-//       ]
-//     }
-//   ],
-// }
+const sidebar_blogs = {
+  '/blogs/react': [
+    { 
+      text: 'GSAP+React',
+      items: [
+        {
+          text: '教程',
+          link: '/blogs/react/index',
+        },
+      ]
+    },
+    {
+      text: '文章',
+      collapsible: true,
+      items: [
+        { text: 'React+GSAP起步', link: '/blogs/react/getting-start-with-gsap-and-react' },
+      ]
+    },
+  ],
+}
 // const sidebar_books = {
 //   '/book/patterns': [ // 设计模式
 //     { 
@@ -227,6 +222,7 @@ const sidebar_plugins = {
 const sidebar = {
   ...sidebar_recipes,
   ...sidebar_plugins,
+  ...sidebar_blogs,
 }
 
 export default {
