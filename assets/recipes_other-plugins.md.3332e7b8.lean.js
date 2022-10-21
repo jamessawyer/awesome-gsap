@@ -1,1 +1,0 @@
-import{_ as e,c as r,o as l,a as s}from"./app.7c93f2c3.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"recipes/other-plugins.md","lastUpdated":1666337432000}'),n={name:"recipes/other-plugins.md"},o=s("",8),a=[o];function t(i,c,g,p,P,u){return l(),r("div",null,a)}const f=e(n,[["render",t]]);export{_ as __pageData,f as default};

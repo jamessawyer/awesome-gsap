@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.7c93f2c3.js";const B=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"recipes/scroll-trigger.md","lastUpdated":1666341082000}'),p={name:"recipes/scroll-trigger.md"},o=l("",3),e=[o];function r(t,c,F,y,D,i){return a(),n("div",null,e)}const E=s(p,[["render",r]]);export{B as __pageData,E as default};
