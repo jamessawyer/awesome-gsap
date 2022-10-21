@@ -80,6 +80,7 @@ useEffect(() => {
 ```
 ::: warning
 gsap.context() 和 [React Context](https://reactjs.org/docs/context.html) 是不同的
+[React18渲染2次对GSAP的影响 - gsap forum](https://greensock.com/forums/topic/31712-simple-opacity-fade-doesnt-work-in-react/)
 :::
 
 
