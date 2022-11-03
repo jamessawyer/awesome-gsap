@@ -138,6 +138,8 @@ const sidebar_plugins = {
       collapsible: true,
       items: [
         { text: '.autoScroll', link: '/plugins/draggable/properties/autoScroll' },
+        { text: '.deltaX', link: '/plugins/draggable/properties/deltaX' },
+        { text: '.deltaY', link: '/plugins/draggable/properties/deltaY' },
       ]
     },
     {
