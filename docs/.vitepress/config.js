@@ -145,6 +145,7 @@ const sidebar_plugins = {
       collapsible: true,
       items: [
         { text: '.addEventListener', link: '/plugins/draggable/methods/addEventListener' },
+        { text: '⚡Draggble.hitTest', link: '/plugins/draggable/methods/static-hitTest' },
       ]
     },
   ]
