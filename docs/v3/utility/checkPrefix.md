@@ -1,5 +1,5 @@
 ---
-title: checkPrefix()
+title: gsap.utils.checkPrefix()
 ---
 📚:
 

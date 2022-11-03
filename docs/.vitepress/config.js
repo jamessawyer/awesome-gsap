@@ -102,6 +102,10 @@ const sidebar_v3 = {
           text: 'checkPrefix',
           link: '/v3/utility/checkPrefix',
         },
+        {
+          text: '⚡ clamp',
+          link: '/v3/utility/clamp',
+        },
       ]
     },
   ],
