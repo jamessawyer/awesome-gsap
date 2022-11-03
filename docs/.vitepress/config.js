@@ -1,5 +1,11 @@
 const nav = [
-  { text: '📄Recipes', activeMatch: `^/recipes/`, link: '/recipes/installation' },
+  { text: '🧾 Recipes', activeMatch: `^/recipes/`, link: '/recipes/installation' },
+  {
+    text: '📖 V3文档',
+    items: [
+      { text: '🛠️ Utility', link: '../v3/utility/checkPrefix' },
+    ]
+  },
   {
     text: '🪄 插件',
     items: [
@@ -86,6 +92,21 @@ const sidebar_blogs = {
   ],
 }
 
+
+const sidebar_v3 = {
+  '/v3/utility': [
+    { 
+      text: '工具方法(gsap.utils.xxx)',
+      items: [
+        {
+          text: 'checkPrefix',
+          link: '/v3/utility/checkPrefix',
+        },
+      ]
+    },
+  ],
+  
+}
 const sidebar_plugins = {
   '/plugins/scroll-trigger': [
     { 
@@ -182,6 +203,7 @@ const sidebar_plugins = {
 
 const sidebar = {
   ...sidebar_recipes,
+  ...sidebar_v3,
   ...sidebar_plugins,
   ...sidebar_blogs,
 }
