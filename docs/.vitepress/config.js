@@ -4,6 +4,7 @@ const nav = [
     text: '🪄 插件',
     items: [
       { text: 'ScrollTrigger', link: '../plugins/scroll-trigger/index' },
+      { text: 'Draggable', link: '../plugins/draggable/index' },
     ]
   },
   {
@@ -83,102 +84,7 @@ const sidebar_blogs = {
     },
   ],
 }
-// const sidebar_books = {
-//   '/book/patterns': [ // 设计模式
-//     { 
-//       text: 'Node设计模式',
-//       items: [
-//         {
-//           text: 'the node platform',
-//           link: '/book/patterns/the-node-platform',
-//         },
-        
-//         {
-//           text: 'callback and events',
-//           link: '/book/patterns/callback-and-events',
-//         },
-//       ]
-//     },
-//     {
-//       text: 'Ⅱ.模块系统',
-//       collapsible: true,
-//       items: [
-//         { text: '介绍', link: '/book/patterns/module-system/index' },
-//         { text: '模块系统的必要性', link: '/book/patterns/module-system/the-need-for-modules' },
-//         { text: 'JS和Node中的模块系统', link: '/book/patterns/module-system/module-system-in-js-and-node' },
-//       ]
-//     },
-//   ],
-// }
-// const sidebar_lib = {
-//   '/lib/fs-extra': [
-//     {
-//       text: 'fs-extra',
-//       items: [
-//         {
-//           text: 'README',
-//           link: '/lib/fs-extra/index'
-//         },
-//         {
-//           text: 'copy',
-//           link: '/lib/fs-extra/copy'
-//         },
-//         {
-//           text: 'emptyDir',
-//           link: '/lib/fs-extra/emptyDir'
-//         },
-//         {
-//           text: 'ensureFile',
-//           link: '/lib/fs-extra/ensureFile'
-//         },
-//         {
-//           text: 'ensureDir',
-//           link: '/lib/fs-extra/ensureDir'
-//         },
-//         {
-//           text: 'ensureLink',
-//           link: '/lib/fs-extra/ensureLink'
-//         },
-//         {
-//           text: 'ensureSymlink',
-//           link: '/lib/fs-extra/ensureSymlink'
-//         },
-//         {
-//           text: 'move',
-//           link: '/lib/fs-extra/move'
-//         },
-//         {
-//           text: 'outputFile',
-//           link: '/lib/fs-extra/outputFile'
-//         },
-//         {
-//           text: 'pathExists',
-//           link: '/lib/fs-extra/pathExists'
-//         },
-//         {
-//           text: 'readJson',
-//           link: '/lib/fs-extra/readJson'
-//         },
-//         {
-//           text: 'remove',
-//           link: '/lib/fs-extra/remove'
-//         },
-//         {
-//           text: 'outputJson',
-//           link: '/lib/fs-extra/outputJson'
-//         },
-//         {
-//           text: 'writeJson',
-//           link: '/lib/fs-extra/writeJson'
-//         },
-//         {
-//           text: 'fs-write-read-writev',
-//           link: '/lib/fs-extra/fs-write-read-writev'
-//         },
-//       ]
-//     }
-//   ],
-// }
+
 const sidebar_plugins = {
   '/plugins/scroll-trigger': [
     { 
@@ -217,6 +123,31 @@ const sidebar_plugins = {
       ]
     },
   ],
+  '/plugins/draggable': [
+    { 
+      text: 'Draggable',
+      items: [
+        {
+          text: '插件介绍',
+          link: '/plugins/draggable/index',
+        },
+      ]
+    },
+    {
+      text: '插件属性',
+      collapsible: true,
+      items: [
+        { text: '.autoScroll', link: '/plugins/draggable/properties/autoScroll' },
+      ]
+    },
+    {
+      text: '插件方法',
+      collapsible: true,
+      items: [
+        { text: '.addEventListener', link: '/plugins/draggable/methods/addEventListener' },
+      ]
+    },
+  ]
 }
 
 const sidebar = {
@@ -237,6 +168,8 @@ export default {
   
   themeConfig: {
     logo: '/logo.svg',
+    outlineTitle: '目录',
+    outline: [2, 3],
     editLink: {
       text: '在GitHub编辑此页',
       pattern: 'https://github.com/jamessawyer/awesome-gsap/edit/main/docs/:path'
