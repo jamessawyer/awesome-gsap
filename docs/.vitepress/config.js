@@ -5,6 +5,7 @@ const nav = [
     items: [
       { text: 'ScrollTrigger', link: '../plugins/scroll-trigger/index' },
       { text: 'Draggable', link: '../plugins/draggable/index' },
+      { text: 'Observer', link: '../plugins/observer/index' },
     ]
   },
   {
@@ -150,7 +151,33 @@ const sidebar_plugins = {
         { text: '⚡Draggble.hitTest', link: '/plugins/draggable/methods/static-hitTest' },
       ]
     },
-  ]
+  ],
+  '/plugins/observer': [
+    { 
+      text: 'Observer',
+      items: [
+        {
+          text: '插件介绍',
+          link: '/plugins/observer/index',
+        },
+      ]
+    },
+    {
+      text: '插件属性',
+      collapsible: true,
+      items: [
+        { text: '.deltaX', link: '/plugins/observer/properties/deltaX' },
+        { text: '.deltaY', link: '/plugins/observer/properties/deltaY' },
+      ]
+    },
+    {
+      text: '插件方法',
+      collapsible: true,
+      items: [
+        { text: 'Observer.create', link: '/plugins/observer/methods/static-create' },
+      ]
+    },
+  ],
 }
 
 const sidebar = {
