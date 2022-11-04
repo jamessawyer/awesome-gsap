@@ -100,6 +100,7 @@ const sidebar_v3 = {
       items: [
         { text: 'checkPrefix', link: '/v3/utility/checkPrefix' },
         { text: '⚡ clamp', link: '/v3/utility/clamp' },
+        { text: 'distribute', link: '/v3/utility/distribute' },
         { text: 'getUnit', link: '/v3/utility/getUnit' },
       ]
     },
