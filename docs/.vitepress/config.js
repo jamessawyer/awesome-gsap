@@ -98,14 +98,9 @@ const sidebar_v3 = {
     { 
       text: '工具方法(gsap.utils.xxx)',
       items: [
-        {
-          text: 'checkPrefix',
-          link: '/v3/utility/checkPrefix',
-        },
-        {
-          text: '⚡ clamp',
-          link: '/v3/utility/clamp',
-        },
+        { text: 'checkPrefix', link: '/v3/utility/checkPrefix' },
+        { text: '⚡ clamp', link: '/v3/utility/clamp' },
+        { text: 'getUnit', link: '/v3/utility/getUnit' },
       ]
     },
   ],
