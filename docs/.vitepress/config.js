@@ -27,46 +27,16 @@ const sidebar_recipes = {
     {
       text: 'GSAP Recipes',
       items: [
-        {
-          text: 'Installation',
-          link: '/recipes/installation',
-        },
-        {
-          text: 'Basics',
-          link: '/recipes/basics',
-        },
-        {
-          text: 'Miscellaneous',
-          link: '/recipes/miscellaneous',
-        },
-        {
-          text: 'Timelines',
-          link: '/recipes/timelines',
-        },
-        {
-          text: 'Nesting Timelines',
-          link: '/recipes/nesting-timelines',
-        },
-        {
-          text: 'Control Methods',
-          link: '/recipes/control-methods',
-        },
-        {
-          text: 'Utility Methods',
-          link: '/recipes/utility-methods',
-        },
-        {
-          text: 'Eases',
-          link: '/recipes/eases',
-        },
-        {
-          text: 'ScrollTrigger',
-          link: '/recipes/scroll-trigger',
-        },
-        {
-          text: 'Other Plugins',
-          link: '/recipes/other-plugins',
-        },
+        { text: 'Installation', link: '/recipes/installation' },
+        { text: 'Basics', link: '/recipes/basics' },
+        { text: 'Miscellaneous', link: '/recipes/miscellaneous' },
+        { text: 'Timelines', link: '/recipes/timelines' },
+        { text: 'Nesting Timelines', link: '/recipes/nesting-timelines' },
+        { text: 'Control Methods', link: '/recipes/control-methods' },
+        { text: 'Utility Methods', link: '/recipes/utility-methods' },
+        { text: 'Eases', link: '/recipes/eases' },
+        { text: 'ScrollTrigger', link: '/recipes/scroll-trigger' },
+        { text: 'Other Plugins', link: '/recipes/other-plugins' },
       ]
     }
   ],
@@ -76,10 +46,7 @@ const sidebar_blogs = {
     { 
       text: 'GSAP+React',
       items: [
-        {
-          text: '教程',
-          link: '/blogs/react/index',
-        },
+        { text: '教程', link: '/blogs/react/index' },
       ]
     },
     {
@@ -102,6 +69,7 @@ const sidebar_v3 = {
         { text: '⚡ clamp', link: '/v3/utility/clamp' },
         { text: 'distribute', link: '/v3/utility/distribute' },
         { text: 'getUnit', link: '/v3/utility/getUnit' },
+        { text: '⚡ interpolate', link: '/v3/utility/interpolate' },
       ]
     },
   ],
