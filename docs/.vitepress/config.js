@@ -70,6 +70,7 @@ const sidebar_v3 = {
         { text: 'distribute', link: '/v3/utility/distribute' },
         { text: 'getUnit', link: '/v3/utility/getUnit' },
         { text: '⚡ interpolate', link: '/v3/utility/interpolate' },
+        { text: 'mapRange', link: '/v3/utility/mapRange' },
       ]
     },
   ],
