@@ -71,6 +71,7 @@ const sidebar_v3 = {
         { text: 'getUnit', link: '/v3/utility/getUnit' },
         { text: '⚡ interpolate', link: '/v3/utility/interpolate' },
         { text: 'mapRange', link: '/v3/utility/mapRange' },
+        { text: 'normalize', link: '/v3/utility/normalize' },
       ]
     },
   ],
