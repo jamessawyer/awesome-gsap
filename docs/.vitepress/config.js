@@ -72,6 +72,7 @@ const sidebar_v3 = {
         { text: '⚡ interpolate', link: '/v3/utility/interpolate' },
         { text: 'mapRange', link: '/v3/utility/mapRange' },
         { text: 'normalize', link: '/v3/utility/normalize' },
+        { text: '⚡ pipe', link: '/v3/utility/pipe' },
       ]
     },
   ],
