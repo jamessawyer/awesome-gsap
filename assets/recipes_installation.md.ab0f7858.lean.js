@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a as p}from"./app.3d4dd759.js";const A=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"recipes/installation.md","lastUpdated":1667890702000}'),l={name:"recipes/installation.md"},o=p("",6),e=[o];function t(c,r,D,y,F,i){return n(),a("div",null,e)}const d=s(l,[["render",t]]);export{A as __pageData,d as default};
