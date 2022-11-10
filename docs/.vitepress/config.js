@@ -75,6 +75,7 @@ const sidebar_v3 = {
         { text: '⚡ pipe', link: '/v3/utility/pipe' },
         { text: 'random', link: '/v3/utility/random' },
         { text: 'selector', link: '/v3/utility/selector' },
+        { text: 'shuffle', link: '/v3/utility/shuffle' },
       ]
     },
   ],
