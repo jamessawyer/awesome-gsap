@@ -74,6 +74,7 @@ const sidebar_v3 = {
         { text: 'normalize', link: '/v3/utility/normalize' },
         { text: '⚡ pipe', link: '/v3/utility/pipe' },
         { text: 'random', link: '/v3/utility/random' },
+        { text: 'selector', link: '/v3/utility/selector' },
       ]
     },
   ],
