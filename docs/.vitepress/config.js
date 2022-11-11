@@ -76,6 +76,7 @@ const sidebar_v3 = {
         { text: 'random', link: '/v3/utility/random' },
         { text: 'selector', link: '/v3/utility/selector' },
         { text: 'shuffle', link: '/v3/utility/shuffle' },
+        { text: 'snap', link: '/v3/utility/snap' },
       ]
     },
   ],
