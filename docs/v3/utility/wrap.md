@@ -23,14 +23,14 @@ title: gsap.utils.wrap()
 1️⃣ `提供最小值和最大值`
 
 ```js {1-3,8,17,20}
-// 1️⃣ 超过最大值，重头来，计算公式 minimum + (input % maximum)
+// 1️⃣ 超过最大值，重头来
 // 限定区间为 [5, 9]，不包含10
 // 📚 12 比 最大值10 多2，因此重头来，得到 5 + (12 % 10) = 7
 //  5 6 7 8 9 10 11 12 13 14   <--- 输入值
 //  5 6 7 8 9 5   6  7  8  9   <--- 可理解为 [5-9] 不停地循环
 gsap.utils.wrap(5, 10, 12) // 7
 
-// 2️⃣ 低于最小值，反向重来，计算公式 maximum + (input % minimum)
+// 2️⃣ 低于最小值，反向重来
 // -3 比 最小值5还要小，它从最大值开始往回数
 // 📚 计算方式 9 + (-3 % 5) = 7
 //                       ⬇️
@@ -45,17 +45,23 @@ gsap.utils.wrap(5, 10, 6) // 6
 // 4️⃣ 可复用函数形式
 const wrap = gsap.utils.wrap(5, 10)
 wrap(8)  // 8  范围内直接返回
-wrap(10) // 5 = 5 + (10 % 10) 超出最大值 minimum + (input % maximum)
+wrap(10) // 5 = 5 + (10 % 10)
 wrap(13) // 8 = 5 + (13 % 10)
-wrap(-4) // 6 = 10 + (-4 % 5) 超出最小值 maximum + (input % minimum)
+wrap(-4) // 6 = 10 + (-4 % 5)
 ```
 
 ::: tip 📚
 
 `wrap(minimum, maximum, input)` 最小值为 `minimum`， 最大值为 `maximum - 1` ，注意这个取值范围：
 
-- 如果input超出最大值，最后结果的计算公式为 `minimum + (input % maximum)`
-- 如果input小于了最小值，最后结果的计算公式为 `maximum + (input % minimum)`
+其计算函数为：
+
+```js
+function wrap(min, max, value) {
+    const range = max - min
+    return (range + (value - min) % range) % range + min
+}
+```
 
 :::
 

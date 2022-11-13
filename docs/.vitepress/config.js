@@ -81,6 +81,7 @@ const sidebar_v3 = {
         { text: '⚡ toArray', link: '/v3/utility/toArray' },
         { text: 'unitize', link: '/v3/utility/unitize' },
         { text: 'wrap', link: '/v3/utility/wrap' },
+        { text: 'wrapYoyo', link: '/v3/utility/wrapYoyo' },
       ]
     },
   ],
