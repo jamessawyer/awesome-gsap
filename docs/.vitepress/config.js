@@ -78,6 +78,7 @@ const sidebar_v3 = {
         { text: 'shuffle', link: '/v3/utility/shuffle' },
         { text: 'snap', link: '/v3/utility/snap' },
         { text: 'splitColor', link: '/v3/utility/splitColor' },
+        { text: '⚡ toArray', link: '/v3/utility/toArray' },
       ]
     },
   ],
