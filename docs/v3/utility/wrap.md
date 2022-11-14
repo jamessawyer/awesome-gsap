@@ -119,7 +119,16 @@ gsap.to("#ball2", {
 })
 ```
 
+视频教程：[GSAP3进阶 - gsap.utils.wrap()](https://www.bilibili.com/video/BV1T8411b7sc)
 
+<iframe width="560" height="450" src="//player.bilibili.com/player.html?aid=218250566&bvid=BV1T8411b7sc&cid=840794893&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+codepen: [GSAP utils wrap & wrapYoyo](https://codepen.io/JamesSawyer/pen/XWEjqBp)
+<iframe height="300" style="width: 100%;" scrolling="no" title="16 - GSAP utils wrap &amp; wrapYoyo" src="https://codepen.io/JamesSawyer/embed/preview/XWEjqBp?default-tab=result&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/JamesSawyer/pen/XWEjqBp">
+  16 - GSAP utils wrap &amp; wrapYoyo</a> by james sawyer (<a href="https://codepen.io/JamesSawyer">@JamesSawyer</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 文档地址：
 
