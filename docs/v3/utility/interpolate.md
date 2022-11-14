@@ -144,5 +144,45 @@ colorizer(25.890) // 'rgba(189,0,66,1)'
 - [gsap.utils.interpolate()](https://greensock.com/docs/v3/GSAP/UtilityMethods/interpolate())
 
 
+::: details 📚TS定义
+```typescript
+/**
+ * Linearly interpolates between any two values of a similar type.
+ * 
+ * ```js
+ * gsap.utils.interpolate(0, 500, 0.5); // 250
+ * 
+ * const interp = gsap.utils.interpolate(0, 100); // no value = reusable function
+ * console.log( interp(0.5) ); // 50
+ * ```
+ *
+ * @param {T} startValue
+ * @param {T} endValue
+ * @param {number} [number]
+ * @returns {T | Function<number>} The interpolated value or interpolate function
+ * @memberof gsap.utils
+ */
+function interpolate<T>(startValue: T, endValue: T, progress: number): T;
+function interpolate<T>(startValue: T, endValue: T): (progress: number) => T;
+/**
+ * Linearly interpolates between any two values of a similar type.
+ * 
+ * ```js
+ * gsap.utils.interpolate([100, 50, 500], 0.5); // 50
+ * 
+ * c interp = gsap.utils.interpolate([100, 50, 500]); // no value = reusable function
+ * console.log( interp(0.5) ); // 50
+ * ```
+ *
+ * @param {T[]} array
+ * @param {number} progress
+ * @returns {T | Function} The interpolated value or interpolate function
+ * @memberof gsap.utils
+ */
+function interpolate<T>(array: T[], progress: number): T;
+function interpolate<T>(array: T[]): (progress: number) => T;
+```
+:::
+
 
 2022年11月07日14:42:10

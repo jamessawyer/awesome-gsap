@@ -97,6 +97,29 @@ transformer(25.678) // 最后结果和 window.innerWidth 相关
 
 - [gsap.utils.mapRange()](https://greensock.com/docs/v3/GSAP/UtilityMethods/mapRange())
 
-
+::: details 📚TS定义
+```typescript
+ /**
+ * Maps a number's relative placement within one range to the equivalent position in another range.
+ * 
+ * ```js
+ * gsap.utils.mapRange(-10, 10, 100, 200, 0); // 150
+ * 
+ * const mapper = gsap.utils.mapRange(0, 100, 0, 250); // no value = reusable function
+ * console.log( mapper(50) ); // 250
+ * ```
+ *
+ * @param {number} inMin
+ * @param {number} inMax
+ * @param {number} outMin
+ * @param {number} outMax
+ * @param {number} [value]
+ * @returns {number | Function} The mapped value or map function
+ * @memberof gsap.utils
+ */
+function mapRange(inMin: number, inMax: number, outMin: number, outMax: number, value: number): number;
+function mapRange(inMin: number, inMax: number, outMin: number, outMax: number): (value: number) => number;
+```
+:::
 
 2022年11月08日14:29:34

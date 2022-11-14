@@ -67,10 +67,32 @@ transformer(25)  // 0.25
 
 
 
-
 文档地址：
 
 - [gsap.utils.normalize()](https://greensock.com/docs/v3/GSAP/UtilityMethods/normalize())
+
+::: details 📚TS定义
+```typescript
+/**
+ * Maps a value within a provided range to the corresponding position in the range between 0 and 1.
+ * 
+ * ```js
+ * gsap.utils.normalize(-10, 10, 0); // 0.5
+ * 
+ * const clamper = gsap.utils.normalize(0, 100); // no value = reusable function
+ * console.log( clamper(50) ); // 0.5
+ * ```
+ *
+ * @param {number} inMin
+ * @param {number} inMax
+ * @param {number} [value]
+ * @returns {number | Function} The normalized value or normalizer function
+ * @memberof gsap.utils
+ */
+function normalize(inMin: number, inMax: number, value: number): number;
+function normalize(inMin: number, inMax: number): (value: number) => number;
+```
+:::
 
 2022年11月08日14:54:58
 

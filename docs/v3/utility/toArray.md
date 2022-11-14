@@ -31,11 +31,31 @@ let targets = gsap.utils.toArray('.class', myElement)
 ```
 
 
-
 文档地址：
 
 - [gsap.utils.toArray()](https://greensock.com/docs/v3/GSAP/UtilityMethods/toArray())
 
+::: details 📚TS定义
+```typescript
+/**
+* Converts almost anything into a flat Array.
+* 
+* ```js
+* const targets = gsap.utils.toArray(".class");
+* const targets = gsap.utils.toArray(myElement);
+* const targets = gsap.utils.toArray($(".class"));
+* const targets = gsap.utils.toArray([".class1", ".class2"]);
+* ```
+*
+* @param {string | object | Element | null} value
+* @param {object} [scope]
+* @param {boolean} [leaveStrings]
+* @returns {T[]} The converted Array
+* @memberof gsap.utils
+*/
+function toArray<T>(value: string | object | Element | null, scope?: object | null, leaveStrings?: boolean): T[];
+```
+:::
 
 
 2022年11月13日18:05:32

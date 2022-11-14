@@ -3,7 +3,7 @@ const nav = [
   {
     text: '📖 V3文档',
     items: [
-      { text: '🛠️ Utility', link: '../v3/utility/checkPrefix' },
+      { text: '🛠️ Utility', link: '../v3/utility/index' },
     ]
   },
   {
@@ -65,6 +65,7 @@ const sidebar_v3 = {
     { 
       text: '工具方法(gsap.utils.xxx)',
       items: [
+        { text: '简介&TS定义', link: '/v3/utility/index' },
         { text: 'checkPrefix', link: '/v3/utility/checkPrefix' },
         { text: '⚡ clamp', link: '/v3/utility/clamp' },
         { text: 'distribute', link: '/v3/utility/distribute' },

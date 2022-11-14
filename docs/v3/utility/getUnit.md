@@ -17,7 +17,26 @@ gsap.utils.getUnit('100x') // 'x'
 gsap.utils.getUnit('ab100') // ''
 ```
 
+
+
 文档地址：
 - [gsap.utils.getUnit()](https://greensock.com/docs/v3/GSAP/UtilityMethods/getUnit())
+
+::: details 📚TS定义
+```typescript
+/**
+ * Returns unit of a given string where the number comes first, then the unit.
+ * 
+ * ```js
+ * gsap.utils.getUnit("50%"); // "%"
+ * ```
+ *
+ * @param {string} value
+ * @returns {string} The unit
+ * @memberof gsap.utils
+ */
+function getUnit(value: string): string;
+```
+:::
 
 2022年11月04日09:45:47

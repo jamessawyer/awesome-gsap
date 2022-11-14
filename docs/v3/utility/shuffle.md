@@ -29,7 +29,22 @@ arr // [5, 4, 1, 3, 2]
 
 - [gsap.utils.shuffle()](https://greensock.com/docs/v3/GSAP/UtilityMethods/shuffle())
 
-
+::: details 📚TS定义
+```typescript
+/**
+* Takes an array and randomly shuffles it, returning the same (but shuffled) array.
+* 
+* ```js
+* gsap.utils.shuffle(array);
+* ```
+*
+* @param {T[]} array
+* @returns {T[]} The same shuffled array
+* @memberof gsap.utils
+*/
+function shuffle<T>(array: T[]): T[];
+```
+:::
 
 2022年11月10日10:57:53
 

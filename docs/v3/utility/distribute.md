@@ -88,9 +88,43 @@ gsap.to('.class', {
 
 文档地址：
 
-\- [gsap.utils.distribute()](https://greensock.com/docs/v3/GSAP/UtilityMethods/distribute())
+- [gsap.utils.distribute()](https://greensock.com/docs/v3/GSAP/UtilityMethods/distribute())
 
 
+::: details 📚TS定义
+```typescript
+interface DistributeConfig {
+  amount?: number;
+  axis?: "x" | "y";
+  base?: number;
+  each?: number;
+  ease?: string | EaseFunction;
+  from?: "start" | "center" | "end" | "edges" | "random" | number | [number, number];
+  grid?: "auto" | [number, number];
+}
+type FunctionBasedValue<T> = (index: number, target: any, targets: any[]) => T;
+
+/**
+ * Returns a function to distribute an array of values based on the inputs that you give it.
+ * 
+ * ```js
+ * gsap.utils.distribute({
+ *   base: 50,
+ *   amount: 100,
+ *   from: "center",
+ *   grid: "auto",
+ *   axis: "y",
+ *   ease: "power1.inOut"
+ * });
+ * ```
+ *
+ * @param {DistributeConfig} config
+ * @returns {FunctionBasedValue<number>} The clamped number or function to clamp to given range
+ * @memberof gsap.utils
+ */
+function distribute(config: DistributeConfig): FunctionBasedValue<number>;
+```
+:::
 
 2022年11月04日10:34:35
 

@@ -88,9 +88,48 @@ gsap.utils.wrapYoyo(['r', 'g', 'b'], 4) // 'r'
 ```
 
 
-
 文档地址：
 
 - [gsap.utils.wrapYoyo()](https://greensock.com/docs/v3/GSAP/UtilityMethods/wrapYoyo())
+
+::: details 📚TS定义
+```typescript
+/**
+ * Returns the next number in a range after the given index, wrapping backwards towards the start after the end has been reached.
+ * 
+ * ```js
+ * let color = gsap.utils.wrap(["red", "green", "yellow"], 5); // "yellow"
+ * 
+ * let wrapper = gsap.utils.wrap(["red", "green", "yellow"]); // no value = reusable function
+ * let color = wrapper(5) // "yellow"
+ * ```
+ *
+ * @param {number} value1
+ * @param {number} value2
+ * @param {number} [index]
+ * @returns {string} The wrapped value or wrap function
+ * @memberof gsap.utils
+ */
+function wrapYoyo(value1: number, value2: number, index: number): number;
+function wrapYoyo(value1: number, value2: number): (index: number) => number;
+/**
+ * Returns the next item in an array after the given index, wrapping backwards towards the start after the end has been reached.
+ * 
+ * ```js
+ * let color = gsap.utils.wrap(["red", "green", "yellow"], 5); // "yellow"
+ * 
+ * let wrapper = gsap.utils.wrap(["red", "green", "yellow"]); // no value = reusable function
+ * let color = wrapper(5) // "yellow"
+ * ```
+ *
+ * @param {T[]} values
+ * @param {number} [index]
+ * @returns {string} The wrapper value or wrap function
+ * @memberof gsap.utils
+ */
+function wrapYoyo<T>(values: T[], index: number): T;
+function wrapYoyo<T>(values: T[]): (index: number) => T;
+```
+:::
 
 2022年11月13日21:40:13

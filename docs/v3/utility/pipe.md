@@ -48,5 +48,87 @@ transformer(25.678) // 最后结果和 window.innerWidth 相关
 文档地址：
  - [gsap.utils.pipe()](https://greensock.com/docs/v3/GSAP/UtilityMethods/pipe())
 
+::: details 📚TS定义
+```typescript
+/**
+ * Strings together multiple function calls, passing the result from one to the next. 
+ * You can pass in as many function references as you'd like!
+ * 
+ * ```js
+ * const transfrom = gsap.utils.pipe(func1, func2, func3); // reusable function
+ * const output = transform(input);
+ * ```
+ *
+ * @param {Function} ab
+ * @param {Function} bc
+ * @param {Function} [cd]
+ * @returns {Function} The function that pipes values from function to function given
+ * @memberof gsap.utils
+ */
+function pipe<A extends Array<unknown>, B>(
+  ab: (...a: A) => B
+): (...a: A) => B;
+function pipe<A extends Array<unknown>, B, C>(
+  ab: (...a: A) => B, 
+  bc: (b: B) => C
+): (...a: A) => C
+function pipe<A extends Array<unknown>, B, C, D>(
+  ab: (...a: A) => B,
+  bc: (b: B) => C,
+  cd: (c: C) => D
+): (...a: A) => D;
+function pipe<A extends Array<unknown>, B, C, D, E>(
+  ab: (...a: A) => B,
+  bc: (b: B) => C,
+  cd: (c: C) => D,
+  de: (d: D) => E
+): (...a: A) => E;
+function pipe<A extends Array<unknown>, B, C, D, E, F>(
+  ab: (...a: A) => B,
+  bc: (b: B) => C,
+  cd: (c: C) => D,
+  de: (d: D) => E,
+  ef: (e: E) => F
+): (...a: A) => F;
+function pipe<A extends Array<unknown>, B, C, D, E, F, G>(
+  ab: (...a: A) => B,
+  bc: (b: B) => C,
+  cd: (c: C) => D,
+  de: (d: D) => E,
+  ef: (e: E) => F,
+  fg: (f: F) => G
+): (...a: A) => G;
+function pipe<A extends Array<unknown>, B, C, D, E, F, G, H>(
+  ab: (...a: A) => B,
+  bc: (b: B) => C,
+  cd: (c: C) => D,
+  de: (d: D) => E,
+  ef: (e: E) => F,
+  fg: (f: F) => G,
+  gh: (g: G) => H
+): (...a: A) => H;
+function pipe<A extends Array<unknown>, B, C, D, E, F, G, H, I>(
+  ab: (...a: A) => B,
+  bc: (b: B) => C,
+  cd: (c: C) => D,
+  de: (d: D) => E,
+  ef: (e: E) => F,
+  fg: (f: F) => G,
+  gh: (g: G) => H,
+  hi: (h: H) => I
+): (...a: A) => I;
+function pipe<A extends Array<unknown>, B, C, D, E, F, G, H, I, J>(
+  ab: (...a: A) => B,
+  bc: (b: B) => C,
+  cd: (c: C) => D,
+  de: (d: D) => E,
+  ef: (e: E) => F,
+  fg: (f: F) => G,
+  gh: (g: G) => H,
+  hi: (h: H) => I,
+  ij: (i: I) => J
+): (...a: A) => J;
+```
+:::
 
 2022年11月09日17:55:35

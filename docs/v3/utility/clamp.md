@@ -69,9 +69,32 @@ transformer(25.789)
 
 
 
-
 文档地址：
 
 - [gsap.utils.clamp()](https://greensock.com/docs/v3/GSAP/UtilityMethods/clamp())
+
+
+::: details 📚TS定义
+```typescript
+/**
+ * Clamps a number between a given minimum and maximum. 
+ * 
+ * ```js
+ * gsap.utils.clamp(0, 100, 105); // returns 100
+ * 
+ * const clamper = gsap.utils.clamp(0, 100); // no value = reusable function
+ * console.log(clamper(105)); // returns 100
+ * ```
+ *
+ * @param {number} minimum
+ * @param {number} maximum
+ * @param {number} [valueToClamp]
+ * @returns {number | Function} The clamped number or function to clamp to given range
+ * @memberof gsap.utils
+ */
+function clamp(minimum: number, maximum: number, valueToClamp: number): number;
+function clamp(minimum: number, maximum: number): (valueToClamp: number) => number;
+```
+:::
 
 2022年11月03日22:13:42

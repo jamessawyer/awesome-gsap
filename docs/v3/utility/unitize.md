@@ -59,10 +59,35 @@ clamp('abc1') // 😅 'NaNpx'
 
 :::
 
-
-
 文档地址：
 
 - [gsap.utils.unitize()](https://greensock.com/docs/v3/GSAP/UtilityMethods/unitize())
+
+
+::: details 📚TS定义
+```typescript
+/**
+ * Ensures that a specific unit gets applied.
+ * 
+ * ```js
+ * const clamp = gsap.utils.unitize( gsap.utils.clamp(0, 100), "px");
+ * clamp(132); // "100px"
+ * 
+ * gsap.to(".class", {
+ *   x: 1000,
+ *   modifiers: {
+ *     x: gsap.utils.unitize( gsap.utils.wrap(0, window.innerWidth), "px") 
+ *   }
+ * });
+ * ```
+ *
+ * @param {Function} fn
+ * @param {string} [unit]
+ * @returns {string} The value with unit added
+ * @memberof gsap.utils
+ */
+function unitize<T extends Array<unknown>>(fn: (...args: T) => unknown, unit?: string): (...args: T) => string;
+```
+:::
 
 2022年11月13日18:57:21

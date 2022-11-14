@@ -266,10 +266,35 @@ gsap.to(q('.box'), {})
 myComponentRef.current.querySelectorAll('.box')
 ```
 
+
+
 文档地址：
 
 - [gsap.utils.selector()](https://greensock.com/docs/v3/GSAP/UtilityMethods/selector())
 
+::: details 📚TS定义
+```typescript
+interface SelectorFunc {
+    <K extends keyof HTMLElementTagNameMap>(selectorText: string): Array<HTMLElementTagNameMap[K]>;
+    <K extends keyof SVGElementTagNameMap>(selectorText: string): Array<SVGElementTagNameMap[K]>;
+    <E extends Element = Element>(selectorText: string): Array<E>;
+  }
 
+/**
+ * Returns a selector function that is scoped to a particular Element.
+ *
+ * ```js
+ * const q = gsap.utils.selector("#id");
+ * const q = gsap.utils.selector(myElement);
+ * gsap.to(q(".class"), {x: 100});
+ * ```
+ *
+ * @param {Element | object | string} scope
+ * @returns {SelectorFunc} A selector function
+ * @memberof gsap.utils
+ */
+function selector(scope: Element | object | string | null): SelectorFunc;
+```
+:::
 
 2022年11月10日10:48:25

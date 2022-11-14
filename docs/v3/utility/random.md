@@ -103,5 +103,48 @@ gsap.to('.class', {
 
 - [gsap.utils.random()](https://greensock.com/docs/v3/GSAP/UtilityMethods/random())
 
+::: details 📚TS定义
+```typescript
+/**
+* Get a random number within a range, optionally rounding to an increment you provide.
+* 
+* ```js
+* gsap.utils.random(-100, 100);
+* gsap.utils.random(0, 500, 5); // snapped to the nearest value of 5
+*
+* const random = gsap.utils.random(-200, 500, 10, true); // reusable function
+* console.log( random() ); 
+* ```
+*
+* @param {number} minValue
+* @param {number} maxValue
+* @param {number} [snapIncrement]
+* @param {boolean} [returnFunction]
+* @returns {number | Function} The random number or random number generator function
+* @memberof gsap.utils
+*/
+function random(minValue: number, maxValue: number, snapIncrement?: number): number;
+function random<T extends boolean>(minValue: number, maxValue: number, returnFunction?: T): T extends true ? () => number : number;
+function random<T extends boolean>(minValue: number, maxValue: number, snapIncrement: number, returnFunction?: T): T extends true ? () => number : number;
+/**
+* Get a random random element in an array.
+* 
+* ```js
+* gsap.utils.random(["red", "blue", "green"]); //"red", "blue", or "green"
+*
+* const random = gsap.utils.random([0, 100, 200], true);
+* console.log( random() ); // 0, 100, or 200 (randomly selected)
+* ```
+*
+* @param {T[]} array
+* @param {boolean} [returnFunction]
+* @returns {number | Function} The random number or random number generator function
+* @memberof gsap.utils
+*/
+function random<T>(array: T[]): T;
+function random<T, U extends boolean>(array: T[], returnFunction?: U): U extends true ? () => T : T;
+```
+:::
+
 2022年11月09日19:02:31
 

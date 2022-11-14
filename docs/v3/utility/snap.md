@@ -155,12 +155,69 @@ gsap.utils.snap({
 复用函数的写法，这里省略，大同小异。
 
 
-
 文档地址：
 
 - [gsap.utils.snap()](https://greensock.com/docs/v3/GSAP/UtilityMethods/snap())
 
+::: details 📚TS定义
+```typescript
+type Point2D = { x: number, y: number };
 
+interface SnapNumberConfig {
+  increment?: number;
+  values?: number[];
+  radius: number;
+}
+
+interface SnapPoint2DConfig {
+  values: Point2D[];
+  radius: number;
+}
+
+/**
+ * Snaps a value to the nearest increment of the number provided.
+ * Or snaps to a value in the given array.
+ * Or snaps to a value within the given radius (if an object is provided).
+ * Or returns a function that does the above (if the second value is not provided).
+ * 
+ * ```js
+ * gsap.utils.snap(10, 23.5); // 20
+ * gsap.utils.snap([100, 50, 500], 65); // 50
+ * gsap.utils.snap({values:[0, 100, 300], radius:20}, 30.5); // 30.5
+ * gsap.utils.snap({increment:500, radius:150}, 310); // 310
+ *
+ * const snap = gsap.utils.snap(5); // no value = reusable function
+ * console.log( snap(0.5) ); // 0
+ * ```
+ *
+ * @param {SnapNumberConfig} snapConfig
+ * @param {number} [valueToSnap]
+ * @returns {number | Function} The snapped number or snap function
+ * @memberof gsap.utils
+ */
+function snap(snapConfig: number | number[] | SnapNumberConfig, valueToSnap: number): number;
+function snap(snapConfig: number | number[] | SnapNumberConfig): (valueToSnap: number) => number;
+/**
+ * Snaps a value if within the given radius of a points (objects with "x" and "y" properties).
+ * Or returns a function that does the above (if the second value is not provided).
+ * 
+ * ```js
+ * 
+ * gsap.utils.snap({values:[0, 100, 300], radius:20}, 85); // 100
+ * 
+ * const snap = gsap.utils.snap({values:[{x:0, y:0}, {x:10, y:10}, {x:20, y:20}], radius:5}); // no value = reusable function
+ * console.log( snap({x:8, y:8}) ); // {x:10, y:10}
+ * ```
+ *
+ * @param {SnapPoint2DConfig} snapConfig
+ * @param {number} [valueToSnap]
+ * @returns {Point2D | Function} The snapped number or snap function
+ * @memberof gsap.utils
+ */
+function snap(snapConfig: SnapPoint2DConfig, valueToSnap: Point2D): Point2D;
+function snap(snapConfig: SnapPoint2DConfig): (valueToSnap: Point2D) => Point2D;
+```
+:::
 
 2022年11月11日16:11:41
 
