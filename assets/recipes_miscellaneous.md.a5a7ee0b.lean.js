@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,a as p}from"./app.36546e80.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"recipes/miscellaneous.md","lastUpdated":1668397743000}'),l={name:"recipes/miscellaneous.md"},o=p("",14),e=[o];function c(t,r,D,y,F,C){return a(),n("div",null,e)}const d=s(l,[["render",c]]);export{i as __pageData,d as default};
