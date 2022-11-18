@@ -3,6 +3,7 @@ const nav = [
   {
     text: '📖 V3文档',
     items: [
+      { text: '🌐 Globals', link: '../v3/globals/properties/effects' },
       { text: '🛠️ Utility', link: '../v3/utility/index' },
     ]
   },
@@ -86,7 +87,22 @@ const sidebar_v3 = {
       ]
     },
   ],
-  
+  '/v3/globals': [
+    {
+      text: '全局属性',
+      collapsible: true,
+      items: [
+        { text: '.effects', link: '/v3/globals/properties/effects' },
+      ]
+    },
+    {
+      text: '全局方法',
+      collapsible: true,
+      items: [
+        { text: '.registerEffect', link: '/v3/globals/methods/registerEffect' },
+      ]
+    },
+  ]
 }
 const sidebar_plugins = {
   '/plugins/scroll-trigger': [
