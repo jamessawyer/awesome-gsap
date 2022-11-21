@@ -100,6 +100,7 @@ const sidebar_v3 = {
       collapsible: true,
       items: [
         { text: '.registerEffect', link: '/v3/globals/methods/registerEffect' },
+        { text: '.delayedCall', link: '/v3/globals/methods/delayedCall' },
         { text: '.killTweensOf', link: '/v3/globals/methods/killTweensOf' },
       ]
     },
