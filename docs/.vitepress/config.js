@@ -99,8 +99,9 @@ const sidebar_v3 = {
       text: '全局方法',
       collapsible: true,
       items: [
-        { text: '.registerEffect', link: '/v3/globals/methods/registerEffect' },
         { text: '.delayedCall', link: '/v3/globals/methods/delayedCall' },
+        { text: '.exportRoot', link: '/v3/globals/methods/exportRoot' },
+        { text: '.registerEffect', link: '/v3/globals/methods/registerEffect' },
         { text: '.killTweensOf', link: '/v3/globals/methods/killTweensOf' },
       ]
     },
