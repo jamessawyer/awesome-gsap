@@ -95,6 +95,7 @@ const sidebar_v3 = {
         { text: '.effects', link: '/v3/globals/properties/effects' },
         { text: '.globalTimeline', link: '/v3/globals/properties/globalTimeline' },
         { text: '.utils', link: '/v3/globals/properties/utils' },
+        { text: '.version', link: '/v3/globals/properties/version' },
       ]
     },
     {
