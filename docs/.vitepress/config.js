@@ -93,6 +93,7 @@ const sidebar_v3 = {
       collapsible: true,
       items: [
         { text: '.effects', link: '/v3/globals/properties/effects' },
+        { text: '.globalTimeline', link: '/v3/globals/properties/globalTimeline' },
       ]
     },
     {
