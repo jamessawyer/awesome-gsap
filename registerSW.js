@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/awesome-gsap/sw.js', { scope: '/awesome-gsap/' })})}
