@@ -1,3 +1,6 @@
+import { defineConfig } from 'vitepress'
+import { withPwa } from '@vite-pwa/vitepress'
+
 const nav = [
   { text: '🧾 Recipes', activeMatch: `^/recipes/`, link: '/recipes/installation' },
   {
@@ -94,6 +97,7 @@ const sidebar_v3 = {
       items: [
         { text: '.effects', link: '/v3/globals/properties/effects' },
         { text: '.globalTimeline', link: '/v3/globals/properties/globalTimeline' },
+        { text: '.ticker', link: '/v3/globals/properties/ticker' },
         { text: '.utils', link: '/v3/globals/properties/utils' },
         { text: '.version', link: '/v3/globals/properties/version' },
       ]
@@ -211,14 +215,19 @@ const sidebar = {
   ...sidebar_blogs,
 }
 
-export default {
+export default withPwa(defineConfig({
   title: 'Awesome GSAP',
   description: 'GSAP 动画🚀🎉',
   lastUpdated: true,
   base: '/awesome-gsap/', // 非常重要这个属性！！！
   
   head:[
-    ['link', { rel: 'icon', href: '/awesome-gsap/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/awesome-gsap/favicon.ico' }],
+    ['link', { rel: 'apple-touch-icon', href: '/pwa-192x192.png', sizes: '192x192' }],
+    ['meta', {
+      name: 'keywords',
+      content: 'GSAP, Animations',
+    }],
   ],
   
   themeConfig: {
@@ -236,5 +245,40 @@ export default {
     // lineNumbers: true, // 是否显示行号
     // options for markdown-it-toc-done-right
     toc: { level: [1, 2, 3] },
+  },
+  pwa: {
+    // https://github.com/vite-pwa/vitepress/blob/main/examples/pwa-simple/.vitepress/config.ts
+    registerType: 'autoUpdate',
+    includeAssets: ['favicon.ico', 'logo.svg'],
+    manifest: {
+      name: 'Awesome Gsap',
+      short_name: 'GsapPWA',
+      theme_color: '#ffffff',
+      icons: [
+        {
+          src: 'pwa-192x192.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          src: 'pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+        },
+        {
+          src: 'pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'any maskable',
+        },
+      ],
+    },
+    workbox: {
+      globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2}'],
+    },
+    devOptions: {
+      enabled: true,
+      navigateFallback: '/',
+    },
   }
-}
+}))
