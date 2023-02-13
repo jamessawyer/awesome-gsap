@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as l}from"./app.586394ea.js";const A=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"recipes/installation.md","lastUpdated":1676275730000}'),p={name:"recipes/installation.md"},o=l("",6),e=[o];function t(c,r,D,i,y,F){return n(),a("div",null,e)}const d=s(p,[["render",t]]);export{A as __pageData,d as default};
