@@ -223,7 +223,7 @@ export default withPwa(defineConfig({
   
   head:[
     ['link', { rel: 'icon', href: '/awesome-gsap/favicon.ico' }],
-    ['link', { rel: 'apple-touch-icon', href: '/pwa-192x192.png', sizes: '192x192' }],
+    ['link', { rel: 'apple-touch-icon', href: '/awesome-gsap/pwa-192x192.png', sizes: '192x192' }],
     ['meta', {
       name: 'keywords',
       content: 'GSAP, Animations',

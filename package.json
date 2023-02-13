@@ -23,9 +23,9 @@
     }
   },
   "devDependencies": {
-    "@vite-pwa/vitepress": "^0.0.2",
-    "vite-plugin-pwa": "^0.13.3",
-    "vitepress": "1.0.0-alpha.30",
-    "vue": "^3.2.45"
+    "@vite-pwa/vitepress": "^0.0.5",
+    "vite-plugin-pwa": "^0.14.4",
+    "vitepress": "1.0.0-alpha.46",
+    "vue": "^3.2.47"
   }
 }
