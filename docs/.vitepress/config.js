@@ -6,22 +6,22 @@ const nav = [
   {
     text: '📖 V3文档',
     items: [
-      { text: '🌐 Globals', link: '../v3/globals/properties/effects' },
-      { text: '🛠️ Utility', link: '../v3/utility/index' },
+      { text: '🌐 Globals', link: '/v3/globals/properties/effects' },
+      { text: '🛠️ Utility', link: '/v3/utility/index' },
     ]
   },
   {
     text: '🪄 插件',
     items: [
-      { text: 'ScrollTrigger', link: '../plugins/scroll-trigger/index' },
-      { text: 'Draggable', link: '../plugins/draggable/index' },
-      { text: 'Observer', link: '../plugins/observer/index' },
+      { text: 'ScrollTrigger', link: '/plugins/scroll-trigger/index' },
+      { text: 'Draggable', link: '/plugins/draggable/index' },
+      { text: 'Observer', link: '/plugins/observer/index' },
     ]
   },
   {
     text: '📒 Blogs',
     items: [
-      { text: 'React❤️‍🔥GSAP', link: '../blogs/react/index' },
+      { text: 'React❤️‍🔥GSAP', link: '/blogs/react/index' },
     ]
   },
 ]
